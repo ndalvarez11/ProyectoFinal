@@ -205,7 +205,7 @@ Como se en la Tabla \ref{regresiones}, cuando esta presente el \emph{resto de la
 
 Como acabamos de ver en la Tabla \ref{regresiones} en la pagina \pageref{regresiones}, si quisieras sintetizar la multidimensionalidad de nuestros indicadores, podriamos usar tres de las cuatro variables que tenemos (un par de las originales tiene demasiada correlacion). 
 
-AsÃ�, propongo que calculemos conglomerados de paÃ�ses usando toda la informaciÃ³n de tres de los indicadores. Como nuestras variables son ordinales utilizaremos un proceso de conglomeraciÃ³n donde las distancia serÃ¡n calculadas usando la medida {\bf macqueen} propuestas en \cite{macqueen_methods_nodate}. Los tres conglomerados se muestran en la Figura \ref{clustmap}.
+Asi, propongo que calculemos conglomerados de paises usando toda la informacion de tres de los indicadores. Como nuestras variables son ordinales utilizaremos un proceso de conglomeracion donde las distancia serian calculadas usando la medida {\bf macqueen} propuestas en . Los tres conglomerados se muestran en la Figura \ref{clustmap}.
 
 
 <<getMap, echo=FALSE,results=hide>>=
@@ -249,7 +249,7 @@ unique(varToPLot)
 aggregate(mapCol_idh@data[,c(10,11,12)],
           by=list(mapCol_idh@data$cluster),FUN=mean)
 
-#preparo colores
+#preparo colores 
 numberOfClasses = length(unique(varToPLot)) 
 colorForScale='Set2'
 paleta = brewer.pal(numberOfClasses, colorForScale)
@@ -270,10 +270,10 @@ legend('left', legend = c("LOW","UP","MEDIUM"),
 \caption{Paises conglomerados segun sus indicadores sociopoliticos}\label{clustmap}
 \end{figure}
 
-\bibliographystyle{apalike}
-\renewcommand{\refname}{Bibliografia}
-\bibliography{Proyecto}
-
+%\cita{macqueen_methods_nodate}
+%\bibliographystyle{apalike}
+%\renewcommand{\refname}{Bibliografia}
+%\bibliography{Proyecto}
 
 
 \end{document}

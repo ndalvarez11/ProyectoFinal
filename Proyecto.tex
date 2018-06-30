@@ -59,7 +59,7 @@ Este es el comportamiento de las variables a estudiar. Veamos su tabla de frecue
 
 
 % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: vie., jun. 29, 2018 - 7:22:51 p. m.
+% Date and time: vie., jun. 29, 2018 - 7:50:08 p. m.
 \begin{table}[!htbp] \centering 
   \caption{Medidas estadisticas} 
   \label{stats} 
@@ -116,7 +116,7 @@ graficos
 En este trabajo estamos interesados en el impacto de los otros indices en el nivel de Democracia. Veamos las relaciones bivariadas que tiene esta variable con todas las demas:
 
 % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: vie., jun. 29, 2018 - 7:23:02 p. m.
+% Date and time: vie., jun. 29, 2018 - 7:50:15 p. m.
 \begin{table}[!htbp] \centering 
   \caption{Correlacion de IDH con las poblaciones} 
   \label{corrIDH} 
@@ -133,7 +133,7 @@ $0.487$ & $0.177$ \\
 Veamos la correlacion entre las variables independientes:
 
 % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: vie., jun. 29, 2018 - 7:23:02 p. m.
+% Date and time: vie., jun. 29, 2018 - 7:50:15 p. m.
 \begin{table}[!htbp] \centering 
   \caption{Correlacion entre variables independientes} 
   \label{corrTableX} 
@@ -172,7 +172,7 @@ Finalmente, vemos los modelos propuestos. Primero sin la resto de poblacion como
 
 
 % Table created by stargazer v.5.2.2 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
-% Date and time: vie., jun. 29, 2018 - 7:23:02 p. m.
+% Date and time: vie., jun. 29, 2018 - 7:50:15 p. m.
 \begin{table}[!htbp] \centering 
   \caption{Modelos de Regresion} 
   \label{regresiones} 
@@ -214,7 +214,7 @@ Como se en la Tabla \ref{regresiones}, cuando esta presente el \emph{resto de la
 
 Como acabamos de ver en la Tabla \ref{regresiones} en la pagina \pageref{regresiones}, si quisieras sintetizar la multidimensionalidad de nuestros indicadores, podriamos usar tres de las cuatro variables que tenemos (un par de las originales tiene demasiada correlacion). 
 
-AsÃ<U+00AD>, propongo que calculemos conglomerados de paÃ<U+00AD>ses usando toda la informaciÃ³n de tres de los indicadores. Como nuestras variables son ordinales utilizaremos un proceso de conglomeraciÃ³n donde las distancia serÃ¡n calculadas usando la medida {\bf macqueen} propuestas en \cite{macqueen_methods_nodate}. Los tres conglomerados se muestran en la Figura \ref{clustmap}.
+Asi, propongo que calculemos conglomerados de paises usando toda la informacion de tres de los indicadores. Como nuestras variables son ordinales utilizaremos un proceso de conglomeracion donde las distancia serian calculadas usando la medida {\bf macqueen} propuestas en . Los tres conglomerados se muestran en la Figura \ref{clustmap}.
 
 
 
@@ -224,13 +224,13 @@ AsÃ<U+00AD>, propongo que calculemos conglomerados de paÃ<U+00AD>ses usando to
 %\begin{adjustbox}{width=11cm,height=8cm,clip,trim=1cm 2.5cm 0cm 2.5cm}
 \begin{Schunk}
 \begin{Soutput}
-[1] 2 1 3
+[1] 2 3 1
 \end{Soutput}
 \begin{Soutput}
   Group.1       IDH PoblacionCabeceraLog PoblacionRestoLog
-1       1 0.8183684             14.04629          12.98461
-2       2 0.7525556             11.28126          11.39788
-3       3 0.8342500             12.17091          11.01873
+1       1 0.7560000             13.05663          12.80485
+2       2 0.7825714             10.58974          10.60684
+3       3 0.8313529             14.03019          12.74569
 \end{Soutput}
 \end{Schunk}
 \includegraphics{Proyecto-plotMap1}
@@ -238,10 +238,10 @@ AsÃ<U+00AD>, propongo que calculemos conglomerados de paÃ<U+00AD>ses usando to
 \caption{Paises conglomerados segun sus indicadores sociopoliticos}\label{clustmap}
 \end{figure}
 
-\bibliographystyle{apalike}
-\renewcommand{\refname}{Bibliografia}
-\bibliography{Proyecto}
-
+%\cita{macqueen_methods_nodate}
+%\bibliographystyle{apalike}
+%\renewcommand{\refname}{Bibliografia}
+%\bibliography{Proyecto}
 
 
 \end{document}

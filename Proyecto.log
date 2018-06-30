@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.27)  29 JUN 2018 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.27)  29 JUN 2018 19:50
 entering extended mode
 **./Proyecto.tex
 (Proyecto.tex
@@ -641,23 +641,7 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
 ("E:\programas\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)))) (Proyecto.aux
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
+)))) (Proyecto.aux)
 \openout1 = `Proyecto.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
@@ -674,7 +658,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
- ("E:\programas\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("E:\programas\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 22.
@@ -803,54 +788,39 @@ Package pdftex.def Info: Proyecto-corrPlotX.pdf  used on input line 158.
  <./Proyecto-corrPlotX.pdf>] [5
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 217.
-
-
-(C:/PROGRA~1/R/R-34~1.1/share/texmf/tex/latex\ts1aer.fd
-File: ts1aer.fd 
-)
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 217.
-
-Overfull \hbox (24.18864pt too wide) in paragraph at lines 217--218
-[]\T1/aer/m/n/10 As√<U+00AD>, pro-pongo que cal-cule-mos con-glom-er-a-dos de p
-a√<U+00AD>ses
- []
-
 <Proyecto-plotMap1.pdf, id=59, 433.62pt x 433.62pt>
 File: Proyecto-plotMap1.pdf Graphic file (type pdf)
 <use Proyecto-plotMap1.pdf>
 Package pdftex.def Info: Proyecto-plotMap1.pdf  used on input line 236.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
-(Proyecto.bbl [6
+ [6
 
- <./Proyecto-plotMap1.pdf>]) [7] (Proyecto.aux) ) 
+ <./Proyecto-plotMap1.pdf>] (Proyecto.aux) ) 
 Here is how much of TeX's memory you used:
- 4545 strings out of 493305
- 63623 string characters out of 3140590
- 119209 words of memory out of 3000000
- 7943 multiletter control sequences out of 15000+200000
- 33226 words of font info for 68 fonts, out of 3000000 for 9000
+ 4515 strings out of 493305
+ 62836 string characters out of 3140590
+ 119187 words of memory out of 3000000
+ 7920 multiletter control sequences out of 15000+200000
+ 32891 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,37p,607b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\nialv_000\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk> <C:\Users\nialv
-_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tctt1000.pk><E
-:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/programas/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/programas/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmbx9.pfb><E:/programas/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/program
-as/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/programas/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/programas/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
-fb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/progr
-amas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Proyecto.pdf (7 pages, 741231 bytes).
+ <C:\Users\nialv_000\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tctt1000.pk><E:/programas/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/programas/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx9.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/
+programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/programas/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/programas/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr7.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr9.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/
+programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/programas/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/programas/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on Proyecto.pdf (6 pages, 733933 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  30 words of extra memory for PDF output out of 10000 (max. 10000000)
 
