@@ -1,0 +1,279 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{authblk}
+\usepackage{adjustbox}
+
+\usepackage{natbib}
+
+
+\title{LOS INDICES DE COLOMBIA}
+% autores
+\renewcommand\Authand{ y }
+\author[1]{\normalsize Nicolas Alvarez}
+
+\affil[1]{\small  Universidad de los Andes\\
+\texttt{{nd.alvarez11}@uniandes.edu.col}}
+
+\date{29 de Junio de 2018}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\begin{abstract}
+Este es mi primer trabajo en exploracion y modelamiento de indices usando LATEX. Este trabajo lo he hecho bajo la filosofia de trabajo replicable. Este es mi primer trabajo en exploracion y modelamiento de indices usando LATEX. Este trabajo lo he hecho bajo la filosofia de trabajo replicable. Este es mi primer trabajo en exploracion y modelamiento de indices usando LATEX. Este trabajo lo he hecho bajo la filosofia de trabajo replicable. Este es mi primer trabajo en exploracion y modelamiento de indices usando LATEX. Este trabajo lo he hecho bajo la filosofia de trabajo replicable.
+\end{abstract}
+
+
+\section*{Introduccion}
+
+Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho. Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho.Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho.Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho.
+Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho.Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho.Aqui les presento mi investigacion sobre diversos indices sociales en el mundo. Los indices los consegui de wikipedia, espero que les gusten mucho.
+
+Comencemos viendo que hay en la seccion \ref{univariada} en la pagina \pageref{univariada}.
+
+\clearpage
+
+\section{Exploracion Univariada}\label{univariada}
+
+En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice. En esta seccion exploro cada indice.
+
+
+<<getData, echo=FALSE>>=
+# Cargar archivo ----
+
+# NO OLVIDAR set working directory
+filename="colombia.csv"
+colb=read.csv(filename, stringsAsFactors = FALSE)
+names(colb) = c("IDH","Departamento", "PoblacionCabecera", "PoblacionResto", "PoblacionTotal", "DepartamentoNorm")
+
+# que variables y tipo
+str(colb)
+
+@
+
+Este es el comportamiento de las variables a estudiar. Veamos su tabla de frecuencias:
+
+
+<<summary, results=tex,echo=FALSE>>=
+## estadisticos
+
+# nos interesa IDH, y poblacion cabecera y poblacion resto
+# no se puede secar tabla de frecuencia, 
+# solo estadisticos:
+library(stargazer)
+vars1 <- colb[, c(1:4)]
+
+stargazer(vars1, title = "Medidas estadisticas", label = "stats", summary.stat = c("n","mean","sd","median","min","max"))
+
+@
+
+
+graficos
+
+%%%%% figure
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{width=5cm,height=5cm,clip,trim=1.5cm 0.5cm 0cm 1.5cm}
+<<echo=FALSE,fig=TRUE>>=
+## graficos
+# el plot de cada uno seria el histograma
+hist(colb$IDH, col = "lightcyan", main = "Histograma IDH Colombia", xlab = "", ylab = "Frecuencia")
+
+@
+\end{adjustbox}
+\caption{Histograma de IDH}
+\label{histogramaIDH}
+\end{figure}
+
+
+%%%%% figure
+\begin{figure}
+\centering
+\begin{adjustbox}{width=7cm,height=7cm,clip,trim=1.5cm 0.5cm 0cm 1.5cm}
+<<echo=FALSE,fig=TRUE>>=
+## graficos
+# el plot de cada uno seria el histograma:
+par(mfrow=c(1,2))
+
+
+hist(colb$PoblacionCabecera, col = "goldenrod2", main = "Poblacion cabecera", xlab = "", ylab = "Frecuencia")
+hist(colb$PoblacionResto, col = "brown2", main = "Resto de poblacion", xlab = "", ylab = "Frecuencia")
+
+@
+\end{adjustbox}
+\caption{Histogramas de poblacion diferenciando de la cabecera municipal y el resto de la poblacion}
+\label{histogramaPobla}
+\end{figure}
+
+%%%%% figure
+\begin{figure}
+\centering
+\begin{adjustbox}{width=7cm,height=7cm,clip,trim=1.5cm 0.5cm 0cm 1.5cm}
+<<echo=FALSE,fig=TRUE>>=
+## graficos
+# el plot de cada uno seria el histograma:
+par(mfrow=c(1,2))
+
+colb$PoblacionCabeceraLog=log(colb$PoblacionCabecera)
+colb$PoblacionRestoLog=log(colb$PoblacionResto)
+
+
+hist(colb$PoblacionCabeceraLog, col = "goldenrod2", main = "Poblacion cabecera", xlab = "", ylab = "Frecuencia")
+hist(colb$PoblacionRestoLog, col = "brown2", main = "Resto de poblacion", xlab = "", ylab = "Frecuencia")
+
+@
+\end{adjustbox}
+\caption{Histogramas de poblacion diferenciando de la cabecera municipal y el resto de la poblacion normalizda}
+\label{histogramaPoblaNorm}
+\end{figure}
+
+\clearpage
+
+
+\section{Exploracion Bivariada}
+
+En este trabajo estamos interesados en el impacto de los otros indices en el nivel de Democracia. Veamos las relaciones bivariadas que tiene esta variable con todas las demas:
+
+<<corrDem, results=tex, echo=FALSE>>=
+explanans=names(colb)[c(7:8)]
+corrIDH=cor(colb$IDH,colb[,explanans],
+            use = "na.or.complete")
+stargazer(corrIDH, title="Correlacion de IDH con las poblaciones",label = "corrIDH")
+@
+
+
+Veamos la correlacion entre las variables independientes:
+
+<<corrTableX, results=tex, echo=FALSE>>=
+corrTableX=round(cor(colb[,explanans],
+                         use = "na.or.complete"),2)
+corrTableX_copy=corrTableX
+# Hide upper triangle
+
+corrTableX[upper.tri(corrTableX)]<-""
+
+stargazer(corrTableX, title="Correlacion entre variables independientes",label = 'corrTableX')
+@
+
+
+Lo visto en la Tabla \ref{corrTableX} se refuerza claramente en la Figura \ref{corrPlotX}.
+
+
+
+\begin{figure}[h]
+\centering
+\begin{adjustbox}{width=7cm,height=7cm,clip,trim=1.5cm 0.5cm 0cm 1.5cm}
+<<corrPlotX, echo=FALSE,fig=TRUE>>=
+plot(colb[,explanans])
+@
+\end{adjustbox}
+\caption{correlacion entre predictores}
+\label{corrPlotX}
+\end{figure}
+
+\clearpage
+
+
+\section{Modelos de Regresion}
+
+Finalmente, vemos los modelos propuestos. Primero sin la resto de poblacion como independiente, y luego con esta. Los resultados se muestran en la Tabla \ref{regresiones} de la pagina \pageref{regresiones}.
+
+
+<<regresiones, echo=FALSE>>=
+LinRegA = lm(IDH ~ ., data = colb[,c(1,7)])
+LinRegB = lm(IDH ~ ., data = colb[,c(1,7:8)])
+@
+
+
+<<regresionesPlot,results=tex, echo=false>>=
+stargazer(LinRegA,LinRegB,
+          title = "Modelos de Regresion", 
+          label = "regresiones")
+@
+
+Como se en la Tabla \ref{regresiones}, cuando esta presente el \emph{resto de la poblacion}, el \emph{el factor de resto de la poblacion} pierde significancia.
+
+
+\clearpage
+
+
+\section{Exploracion Espacial}
+
+Como acabamos de ver en la Tabla \ref{regresiones} en la pagina \pageref{regresiones}, si quisieras sintetizar la multidimensionalidad de nuestros indicadores, podriamos usar tres de las cuatro variables que tenemos (un par de las originales tiene demasiada correlacion). 
+
+AsÃ�, propongo que calculemos conglomerados de paÃ�ses usando toda la informaciÃ³n de tres de los indicadores. Como nuestras variables son ordinales utilizaremos un proceso de conglomeraciÃ³n donde las distancia serÃ¡n calculadas usando la medida {\bf macqueen} propuestas en \cite{macqueen_methods_nodate}. Los tres conglomerados se muestran en la Figura \ref{clustmap}.
+
+
+<<getMap, echo=FALSE,results=hide>>=
+library(rgdal)
+folder='COL_maps'
+file='COL_adm1.shp'
+mapaFile=file.path(folder,file)
+mapCol <- rgdal::readOGR(mapaFile,stringsAsFactors=F) 
+sub_colb=colb[,c(1:2,7:8)]
+mapCol_idh=merge(mapCol,sub_colb, by.x='NAME_1', by.y='Departamento',all.x=F)
+nrow(mapCol_idh)
+@
+
+<<echo=FALSE>>=
+dimensions=c("NAME_1","IDH","PoblacionCabeceraLog","PoblacionRestoLog")
+library(cluster)
+dataCluster=mapCol_idh@data[,c(dimensions)]
+dataCluster[,-1]=scale(dataCluster[,-1])
+resultado=kmeans(dataCluster[,-1],3)
+clusters=as.data.frame(resultado$cluster)#creo data frame con los clusters:
+clusters=as.data.frame(resultado$cluster)
+# aÃ±ado columna con nombre de regiones
+clusters$NAME_1=dataCluster$NAME_1
+names(clusters)=c('cluster','NAME_1')
+#hago el merge hacia el mapa:
+mapCol_idh=merge(mapCol_idh,clusters, by='NAME_1',all.x=F)
+
+@
+
+\begin{figure}[h]
+\centering
+%\begin{adjustbox}{width=11cm,height=8cm,clip,trim=1cm 2.5cm 0cm 2.5cm}
+<<plotMap1, echo=FALSE, fig=TRUE>>=
+library(RColorBrewer)
+library(classInt)
+#variable a colorear
+varToPLot=mapCol_idh$cluster
+
+# decidir color:
+unique(varToPLot)
+aggregate(mapCol_idh@data[,c(10,11,12)],
+          by=list(mapCol_idh@data$cluster),FUN=mean)
+
+#preparo colores
+numberOfClasses = length(unique(varToPLot)) 
+colorForScale='Set2'
+paleta = brewer.pal(numberOfClasses, colorForScale)
+
+# grafico mapa basico
+plot(mapCol,col='grey',border=0)
+
+# grafico mapa cluster
+plot(mapCol_idh, col = paleta[varToPLot],border=F,add=T)
+legend('left', legend = c("LOW","UP","MEDIUM"),
+       fill = paleta, 
+       cex = 0.6, 
+       bty = "n",
+       title="conglomerado")
+
+@
+%\end{adjustbox}
+\caption{Paises conglomerados segun sus indicadores sociopoliticos}\label{clustmap}
+\end{figure}
+
+\bibliographystyle{apalike}
+\renewcommand{\refname}{Bibliografia}
+\bibliography{Proyecto}
+
+
+
+\end{document}
