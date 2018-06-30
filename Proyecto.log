@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.27)  29 JUN 2018 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.27)  29 JUN 2018 20:10
 entering extended mode
 **./Proyecto.tex
 (Proyecto.tex
@@ -741,84 +741,69 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 [1
 
 {C:/Users/nialv_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for TS1+aett on input line 48.
-
-
-(C:/PROGRA~1/R/R-34~1.1/share/texmf/tex/latex\ts1aett.fd
-File: ts1aett.fd 
-)
-LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 48.
-
-
-("E:\programas\MiKTeX 2.9\tex\latex\base\ts1cmtt.fd"
-File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `TS1/aett/m/n' in size <10> not available
-(Font)              Font shape `TS1/cmtt/m/n' tried instead on input line 48.
-
-Overfull \hbox (86.34802pt too wide) in paragraph at lines 66--76
+Overfull \hbox (86.34802pt too wide) in paragraph at lines 55--65
  [][] 
  []
 
 <Proyecto-003.pdf, id=14, 433.62pt x 433.62pt>
 File: Proyecto-003.pdf Graphic file (type pdf)
 <use Proyecto-003.pdf>
-Package pdftex.def Info: Proyecto-003.pdf  used on input line 84.
+Package pdftex.def Info: Proyecto-003.pdf  used on input line 74.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
 <Proyecto-004.pdf, id=15, 433.62pt x 433.62pt>
 File: Proyecto-004.pdf Graphic file (type pdf)
 <use Proyecto-004.pdf>
-Package pdftex.def Info: Proyecto-004.pdf  used on input line 95.
+Package pdftex.def Info: Proyecto-004.pdf  used on input line 85.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
 <Proyecto-005.pdf, id=16, 433.62pt x 433.62pt>
 File: Proyecto-005.pdf Graphic file (type pdf)
 <use Proyecto-005.pdf>
-Package pdftex.def Info: Proyecto-005.pdf  used on input line 105.
+Package pdftex.def Info: Proyecto-005.pdf  used on input line 95.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
 [2
 
  <./Proyecto-003.pdf>] [3 <./Proyecto-004.pdf> <./Proyecto-005.pdf>]
-<Proyecto-corrPlotX.pdf, id=43, 433.62pt x 433.62pt>
+<Proyecto-corrPlotX.pdf, id=41, 433.62pt x 433.62pt>
 File: Proyecto-corrPlotX.pdf Graphic file (type pdf)
 <use Proyecto-corrPlotX.pdf>
-Package pdftex.def Info: Proyecto-corrPlotX.pdf  used on input line 158.
+Package pdftex.def Info: Proyecto-corrPlotX.pdf  used on input line 148.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
  [4
 
  <./Proyecto-corrPlotX.pdf>] [5
 
 ]
-<Proyecto-plotMap1.pdf, id=59, 433.62pt x 433.62pt>
+<Proyecto-plotMap1.pdf, id=57, 433.62pt x 433.62pt>
 File: Proyecto-plotMap1.pdf Graphic file (type pdf)
 <use Proyecto-plotMap1.pdf>
-Package pdftex.def Info: Proyecto-plotMap1.pdf  used on input line 236.
+Package pdftex.def Info: Proyecto-plotMap1.pdf  used on input line 226.
 (pdftex.def)             Requested size: 276.00105pt x 276.0139pt.
- [6
+ (Proyecto.bbl [6
 
- <./Proyecto-plotMap1.pdf>] (Proyecto.aux) ) 
+ <./Proyecto-plotMap1.pdf>])
+[7] (Proyecto.aux) ) 
 Here is how much of TeX's memory you used:
- 4515 strings out of 493305
- 62836 string characters out of 3140590
- 119187 words of memory out of 3000000
- 7920 multiletter control sequences out of 15000+200000
- 32891 words of font info for 67 fonts, out of 3000000 for 9000
+ 4495 strings out of 493305
+ 62304 string characters out of 3140590
+ 119201 words of memory out of 3000000
+ 7904 multiletter control sequences out of 15000+200000
+ 32594 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,37p,607b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\nialv_000\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tctt1000.pk><E:/programas/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/programas/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx9.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/
-programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/programas/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E:/programas/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr7.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr9.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/
-programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><E:/programas/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><E:/programas/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Proyecto.pdf (6 pages, 733933 bytes).
+<E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/
+programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><E:/programas/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/programas/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr17.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:
+/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/programas/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/programas/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><E:/programas/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb><E:/programas/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+
+Output written on Proyecto.pdf (7 pages, 736389 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
